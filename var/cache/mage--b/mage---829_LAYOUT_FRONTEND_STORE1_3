@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1699500375;s:6:"expire";i:1731036375;s:4:"tags";s:37:"829_LAYOUT_GENERAL_CACHE_TAG,829_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1699522588;s:6:"expire";i:1731058588;s:4:"tags";s:37:"829_LAYOUT_GENERAL_CACHE_TAG,829_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -7112,7 +7112,7 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1699500375;s:6:"expire";i:1731036375;s:4:"t
                 This is title
             </title>
    </head>
-   <block class="Tigren\HelloWorld\Block\Display" name="helloworld_display" template="Tigren_Helloworld::sayhello.phtml"/>
+   <block class="Tigren\HelloWorld\Block\Index" name="helloworld_display" template="Tigren_Helloworld::index.phtml"/>
 </referenceContainer>
 </handle><handle id="default"><body>
    <referenceBlock name="logo">

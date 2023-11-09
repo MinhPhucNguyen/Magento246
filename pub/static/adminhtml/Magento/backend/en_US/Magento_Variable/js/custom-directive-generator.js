@@ -1,1 +1,0 @@
-/var/www/html/magento246/vendor/magento/module-variable/view/adminhtml/web/js/custom-directive-generator.js

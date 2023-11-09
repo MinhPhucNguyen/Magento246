@@ -1,0 +1,13 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="Tigren_topic" resource="default"  engine="innodb" comment="Tigren Topic" >
+        <column xsi:type="int" name="topic_id" unsigned="true" nullable="false" identity="true" comment=" ID"/>
+        <column xsi:type="text" name="title"  nullable="true" identity="true" comment=""/>
+        <column xsi:type="text" name="content" nullable="true" identity="true" comment="Content"/>
+        <column xsi:type="timestamp" name="creation_time"  nullable="false" comment="Creation Time"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+
+            <column name="topic_id"/>
+
+        </constraint>
+    </table>
+</schema>

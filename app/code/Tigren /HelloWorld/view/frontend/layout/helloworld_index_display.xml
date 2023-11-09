@@ -8,8 +8,8 @@
             </title>
         </head>
 
-        <block class="Tigren\HelloWorld\Block\Display"
-               name="helloworld_display" template="Tigren_Helloworld::sayhello.phtml" />
+        <block class="Tigren\HelloWorld\Block\Index"
+               name="helloworld_display" template="Tigren_Helloworld::index.phtml" />
     </referenceContainer>
 </page>
 
