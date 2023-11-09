@@ -1,0 +1,16 @@
+<?xml version="1.0"?> <!--Khai báo version xml-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer name="content">
+        <head>
+            <title>
+                This is title
+            </title>
+        </head>
+
+        <block class="Tigren\HelloWorld\Block\Display"
+               name="helloworld_display" template="Tigren_Helloworld::sayhello.phtml" />
+    </referenceContainer>
+</page>
+
+
