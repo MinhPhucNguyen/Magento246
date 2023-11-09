@@ -4214,3 +4214,26 @@ Class Tigren\HelloWorld\Controller\Index\Display\Interceptor generation error: T
 #8 /var/www/html/magento246/vendor/symfony/console/Application.php(171): Magento\Framework\Console\Cli->doRun()
 #9 /var/www/html/magento246/bin/magento(23): Symfony\Component\Console\Application->run()
 #10 {main} [] []
+[2023-11-09T09:45:44.288024+00:00] main.ERROR: Command "setup:upgarde" is not defined.
+
+Did you mean one of these?
+    setup:backup
+    setup:config:set
+    setup:db-data:upgrade
+    setup:db-declaration:generate-patch
+    setup:db-declaration:generate-whitelist
+    setup:db-schema:upgrade
+    setup:db:status
+    setup:di:compile
+    setup:install
+    setup:performance:generate-fixtures
+    setup:rollback
+    setup:static-content:deploy
+    setup:store-config:set
+    setup:uninstall
+    setup:upgrade
+#0 /var/www/html/magento246/vendor/symfony/console/Application.php(259): Symfony\Component\Console\Application->find()
+#1 /var/www/html/magento246/vendor/magento/framework/Console/Cli.php(116): Symfony\Component\Console\Application->doRun()
+#2 /var/www/html/magento246/vendor/symfony/console/Application.php(171): Magento\Framework\Console\Cli->doRun()
+#3 /var/www/html/magento246/bin/magento(23): Symfony\Component\Console\Application->run()
+#4 {main} [] []
