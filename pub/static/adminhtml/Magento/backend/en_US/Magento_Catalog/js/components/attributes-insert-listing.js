@@ -1,0 +1,1 @@
+/var/www/html/magento246/vendor/magento/module-catalog/view/adminhtml/web/js/components/attributes-insert-listing.js
