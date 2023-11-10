@@ -3,8 +3,8 @@ return [
     'cache_types' => [
         'compiled_config' => 1,
         'config' => 1,
-        'layout' => 1,
-        'block_html' => 1,
+        'layout' => 0,
+        'block_html' => 0,
         'collections' => 1,
         'reflection' => 1,
         'db_ddl' => 1,
@@ -12,7 +12,7 @@ return [
         'customer_notification' => 1,
         'config_integration' => 1,
         'config_integration_api' => 1,
-        'full_page' => 1,
+        'full_page' => 0,
         'config_webservice' => 1,
         'translate' => 1
     ],
@@ -65,8 +65,8 @@ return [
             'connection' => 'default'
         ]
     ],
-    'x-frame-options' => 'SAMEORIGIN',
-    'MAGE_MODE' => 'default',
+    'x-frame-options' => 'fpcSAMEORIGIN',
+    'MAGE_MODE' => 'developer',
     'session' => [
         'save' => 'files'
     ],

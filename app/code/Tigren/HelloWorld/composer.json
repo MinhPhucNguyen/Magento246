@@ -1,0 +1,22 @@
+{
+    "name": "tigren/module-helloworld",
+    "description": "\u00e1dsadsa",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Tigren\\HelloWorld\\": ""
+        }
+    }
+}
