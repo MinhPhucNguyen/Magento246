@@ -14,26 +14,15 @@ use Magento\Framework\View\Result\PageFactory;
 class Display implements HttpGetActionInterface
 {
 
-    /**
-     * @var PageFactory
-     */
     protected $resultPageFactory;
+    protected $topicFactory;
 
-    /**
-     * Constructor
-     *
-     * @param PageFactory $resultPageFactory
-     */
-    public function __construct(PageFactory $resultPageFactory)
+    public function __construct(PageFactory $resultPageFactory, \Tigren\HelloWorld\Model\TopicFactory $topicFactory)
     {
+        $this->topicFactory = $topicFactory;
         $this->resultPageFactory = $resultPageFactory;
     }
 
-    /**
-     * Execute view action
-     *
-     * @return ResultInterface
-     */
     public function execute()
     {
         return $this->resultPageFactory->create();

@@ -10,17 +10,19 @@ namespace Tigren\HelloWorld\Block\View;
 class Display extends \Magento\Framework\View\Element\Template
 {
 
-    /**
-     * Constructor
-     *
-     * @param \Magento\Framework\View\Element\Template\Context  $context
-     * @param array $data
-     */
+    protected  $topicFactory;
+
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-        array $data = []
+        \Tigren\HelloWorld\Model\TopicFactory $topicFactory
     ) {
-        parent::__construct($context, $data);
+        $this->topicFactory = $topicFactory;
+        parent::__construct($context);
+    }
+
+    public  function  getTopicList(){
+        $topicList = $this->topicFactory->create();
+        return $topicList->getCollection();
     }
 }
 

@@ -8,10 +8,10 @@ class Interceptor extends \Tigren\HelloWorld\Controller\View\Display implements 
 {
     use \Magento\Framework\Interception\Interceptor;
 
-    public function __construct(\Magento\Framework\View\Result\PageFactory $resultPageFactory)
+    public function __construct(\Magento\Framework\View\Result\PageFactory $resultPageFactory, \Tigren\HelloWorld\Model\TopicFactory $topicFactory)
     {
         $this->___init();
-        parent::__construct($resultPageFactory);
+        parent::__construct($resultPageFactory, $topicFactory);
     }
 
     /**
