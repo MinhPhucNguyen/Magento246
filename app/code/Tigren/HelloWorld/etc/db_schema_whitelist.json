@@ -1,0 +1,13 @@
+{
+    "Tigren_Topic": {
+        "column": {
+            "topic_id": true,
+            "title": true,
+            "content": true,
+            "creation_time": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
