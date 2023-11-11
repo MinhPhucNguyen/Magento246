@@ -1,0 +1,6 @@
+/pub/media/.
+/sitemap
+/node_modules
+/package.json
+/pub/static/*
+/vendor
