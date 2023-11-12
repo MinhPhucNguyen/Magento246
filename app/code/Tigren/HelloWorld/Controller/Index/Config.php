@@ -18,9 +18,9 @@ class Config extends Action {
 
     public function execute()
     {
-        echo $this->helperData->getGeneralConfig('enable', null);
+        echo $this->helperData->getGeneralConfig('enable');
         echo '<br>';
-        echo $this->helperData->getGeneralConfig('display_text', null);
+        echo $this->helperData->getGeneralConfig('display_text');
         exit;
     }
 }
