@@ -38,14 +38,14 @@ class Actions extends Column
                     $viewUrlPath = $this->getData('config/viewUrlPath');
                     $urlEntityParamName = $this->getData('config/urlEntityParamName');
                     $item[$this->getData('name')] = [
-                        'view' => [
+                        'edit' => [
                             'href' => $this->urlBuilder->getUrl(
                                 $viewUrlPath,
                                 [
                                     $urlEntityParamName => $item['category_id'],
                                 ]
                             ),
-                            'label' => __('View'),
+                            'label' => __('Edit'),
                         ],
                     ];
                 }

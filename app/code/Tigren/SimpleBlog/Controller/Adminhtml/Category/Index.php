@@ -9,7 +9,7 @@
 
 namespace Tigren\SimpleBlog\Controller\Adminhtml\Category;
 
-use Magento\Framework\App\Action\Action;
+use Magento\Backend\App\Action;
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\App\ResponseInterface;

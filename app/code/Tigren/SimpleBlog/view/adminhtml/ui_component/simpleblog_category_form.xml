@@ -9,22 +9,33 @@
 <form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
     <argument name="data" xsi:type="array">
+
         <item name="js_config" xsi:type="array">
-            <item name="provider" xsi:type="string">simpleblog_category_form.simpleblog_category_form_data_source</item>
-            <item name="deps" xsi:type="string">simpleblog_category_form.simpleblog_category_form_data_source</item>
+            <item name="provider" xsi:type="string">
+                simpleblog_category_form.tigren_simpleblog_category_form_data_source
+            </item>
+            <item name="deps" xsi:type="string">simpleblog_category_form.tigren_simpleblog_category_form_data_source
+            </item>
         </item>
+
         <item name="label" xsi:type="string" translate="true">Form Information</item>
+
         <item name="config" xsi:type="array">
             <item name="dataScope" xsi:type="string">data</item>
             <item name="namespace" xsi:type="string">simpleblog_category_form</item>
         </item>
+
         <item name="template" xsi:type="string">templates/form/collapsible</item>
+
     </argument>
-    <dataSource name="ui_form_data_source">
+
+    <dataSource name="tigren_simpleblog_category_form_data_source">
         <argument name="dataProvider" xsi:type="configurableObject">
-            <argument name="class" xsi:type="string">Devhooks\HelloWorld\Model\Grid\DataProvider</argument>
-            <argument name="name" xsi:type="string">ui_form_data_source</argument>
-            <argument name="primaryFieldName" xsi:type="string">id</argument>
+            <argument name="class" xsi:type="string">
+                Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider
+            </argument>
+            <argument name="name" xsi:type="string">tigren_simpleblog_category_form_data_source</argument>
+            <argument name="primaryFieldName" xsi:type="string">category_id</argument>
             <argument name="requestFieldName" xsi:type="string">id</argument>
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
@@ -46,10 +57,11 @@
                 <item name="sortOrder" xsi:type="number">10</item>
             </item>
         </argument>
+
         <field name="status" formElement="checkbox">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
-                    <item name="label" xsi:type="string" translate="true">Enabled</item>
+                    <item name="label" xsi:type="string" translate="true">Status</item>
                     <item name="prefer" xsi:type="string">toggle</item>
                     <item name="formElement" xsi:type="string">checkbox</item>
                     <item name="default" xsi:type="number">1</item>
@@ -67,31 +79,27 @@
                 </checkbox>
             </formElements>
         </field>
-        <field name="custom_field_1">
+
+        <field name="category_name">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="dataType" xsi:type="string">text</item>
-                    <item name="label" xsi:type="string" translate="true">Custom Field 1</item>
+                    <item name="label" xsi:type="string" translate="true">Category Name</item>
                     <item name="formElement" xsi:type="string">input</item>
-                    <item name="source" xsi:type="string">custom_field_1</item>
-                    <item name="dataScope" xsi:type="string">custom_field_1</item>
-                    <item name="validation" xsi:type="array">
-                        <item name="required-entry" xsi:type="boolean">true</item>
-                    </item>
+                    <item name="source" xsi:type="string">category</item>
+                    <item name="dataScope" xsi:type="string">category_name</item>
                 </item>
             </argument>
         </field>
-        <field name="custom_field_2">
+
+        <field name="category_description">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="dataType" xsi:type="string">text</item>
-                    <item name="label" xsi:type="string" translate="true">Custom Field 2</item>
+                    <item name="label" xsi:type="string" translate="true">Description</item>
                     <item name="formElement" xsi:type="string">input</item>
-                    <item name="source" xsi:type="string">custom_field_2</item>
-                    <item name="dataScope" xsi:type="string">custom_field_2</item>
-                    <item name="validation" xsi:type="array">
-                        <item name="required-entry" xsi:type="boolean">true</item>
-                    </item>
+                    <item name="source" xsi:type="string">category</item>
+                    <item name="dataScope" xsi:type="string">category_description</item>
                 </item>
             </argument>
         </field>
