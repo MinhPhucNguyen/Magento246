@@ -1,8 +1,12 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Tigren_HelloWorld::tigren_menu" title="Tigren Menu" module="Tigren_HelloWorld" sortOrder="1" resource="Tigren_HelloWorld::helloworld"/>
-        <add id="Tigren_HelloWorld::post" title="Manage Posts" module="Tigren_HelloWorld" sortOrder="10" action="tigren_helloworld/post" resource="Tigren_HelloWorld::post" parent="Tigren_HelloWorld::tigren_menu"/>
-        <add id="Tigren_HelloWorld::hello_configuration" title="Configuration" module="Tigren_HelloWorld" sortOrder="99" parent="Tigren_HelloWorld::tigren_menu" action="adminhtml/system_config/edit/section/helloworld" resource="Tigren_HelloWorld::helloworld_configuration"/>
+
+        <add id="Tigren_HelloWorld::tigren_menu" title="Tigren Menu" translate="title" module="Tigren_HelloWorld" sortOrder="5" resource="Tigren_HelloWorld::page"/>
+
+        <add id="Tigren_HelloWorld::post" title="Post" translate="title" module="Tigren_HelloWorld" sortOrder="30" parent="Tigren_HelloWorld::tigren_menu" action="cms/block" resource="Tigren_HelloWorld::helloworld"/>
+
+        <add id="Tigren_HelloWorld::configuration" title="Configuration" translate="title" module="Tigren_HelloWorld" sortOrder="30" parent="Tigren_HelloWorld::tigren_menu" action="adminhtml/system_config/edit/section/helloworld" resource="Tigren_HelloWorld::helloworld_configuration"/>
+
     </menu>
 </config>

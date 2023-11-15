@@ -105,6 +105,7 @@
       <sourceFolder url="file://$MODULE_DIR$/vendor/magento/framework/View/Test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/magento/framework/Webapi/Test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/magento/framework/Xml/Test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/app/code/Tigren/SimpleBlog" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/pub/static" />
       <excludeFolder url="file://$MODULE_DIR$/var/cache" />
       <excludeFolder url="file://$MODULE_DIR$/var/page_cache" />

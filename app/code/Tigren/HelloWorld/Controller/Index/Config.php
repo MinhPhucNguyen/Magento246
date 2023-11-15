@@ -2,9 +2,9 @@
 
 namespace Tigren\HelloWorld\Controller\Index;
 
-use \Magento\Framework\App\Action\Action;
-use  \Magento\Framework\App\Action\Context;
-use  \Tigren\HelloWorld\Helper\Data;
+use Magento\Framework\App\Action\Action;
+use Magento\Framework\App\Action\Context;
+use Tigren\HelloWorld\Helper\Data;
 
 class Config extends Action {
 
